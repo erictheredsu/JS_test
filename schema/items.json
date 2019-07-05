@@ -1,5 +1,4 @@
 {
-   "odata.metadata" : "http://10.193.84.13:50001/b1s/v1/$metadata#Items/@Element",
    "ItemCode" : "i0001",
    "ItemName" : "item0001",
    "ForeignName" : null,
