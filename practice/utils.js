@@ -1,6 +1,6 @@
 'use strict'
 
-const utils = {
+const demo = {
     aaa : "a_string",
 
     printx : function (content){
@@ -9,4 +9,11 @@ const utils = {
 
 };
 
-module.exports =  utils;
+
+function add(a, b){
+    return a + b;
+}
+
+
+exports.demo =  demo;
+exports.add = add;
