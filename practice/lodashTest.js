@@ -44,9 +44,43 @@ let c4 = _.find(users, (o)=>{ return o.age > 40});
 
 let rc = _.includes(arr8, 2);
 
+console.log("-----------function-------------------");
+//_.bind?
+//_.bindKey?
 
 console.log("-----------lang-------------------");
 console.log("null to string " + _.toString(null)); // same with undefined 
+
+rc = _.isEqual(arr1, arr2);
+rc = _.isFunction(()=>{return 0});
+
+let lang1 = new Map();
+lang1['a'] = 'aa';
+lang1['b'] = 'bb';
+rc = _.isMap(lang1);
+rc = _.isArray(lang1);
+
+rc = _.isMatch(users[1], users[1]);
+
+rc = _.isNull(null);
+rc = _.isNull('');
+//rc = _.isNull(undefiend);
+rc = _.isUndefined(undefined);
+
+rc = _.isObject(_);
+
+rc = _.isSet(new Set());
+
+rc =_.isString('abc'); 
+
+console.log(_.toArray(users[0]));
+
+console.log("-----------Object-------------------");
+let o1 = {'a':1, 'b':2};
+let o2 = {'c':3, 'd': o1};
+console.log(_.assign(o2, o1));
+
+console.log(_.at(o2, 'd.a', 'b'));
 
 console.log("-----------string-------------------");
 console.log(_.escape('fred, barney, & pebbles'));
